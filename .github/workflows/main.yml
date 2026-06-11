@@ -29,7 +29,8 @@ jobs:
       - name: Register Build Artifact
         uses: cloudbees-io-gha/register-build-artifact@v3
         with:
-          name: "demo-go-service"
-          version: "tagGha"
-          url: "cbjfrog.saas-preprod.beescloud.com/jfrog-test-docker-target-repo/test-image:tagGha"
-          cloudbees-url: "https://api.saas-preprod.beescloud.com"      
+          name: "nexus-GHA"
+          version: "1.0"
+          url: "http://nexusoss.saas-preprod.beescloud.com/aspm-test:1.0"
+          cloudbees-url: "https://api.cloudbees.io"    
+          type: "docker"
